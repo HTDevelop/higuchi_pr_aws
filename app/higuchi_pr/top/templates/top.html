@@ -1,0 +1,877 @@
+<!doctype html>
+<html>
+  <head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HIGUCHI Work History" />
+    <!-- <meta property='og:url' content='ToDo'> -->
+    <meta property="og:description" content="HIGUCHI Work History" />
+    <meta property="og:image" content="{% static 'top/img/ogp.png' %}" />
+    <meta name="description" content="HIGUCHI Work History" />
+    <title>HIGUCHI Work History</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:700"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'top/css/reset.css' %}"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'top/css/photoswipe/photoswipe.css' %}"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'top/css/photoswipe/default-skin/default-skin.css' %}"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'top/css/style.css' %}"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="shortcut icon" href="{% static 'top/img/favicon.ico' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- <link rel=”canonical” href="ToDo" /> -->
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <nav id="gnav" class="fixed">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#certifications">CERTIFICATIONS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <header id="header">
+        <div class="inner">
+          <h1 class="logo">
+            <div class="logo-title">HIGUCHI Takashi</div>
+            <div class="logo-desc">HISTORY</div>
+          </h1>
+        </div>
+      </header>
+      <main id="contents">
+        <section class="section" id="about">
+          <div class="inner">
+            <div class="section-title-area">
+              <h2 class="section-title">ABOUT</h2>
+              <div class="section-intro">
+                樋口 貴志
+                <br />
+                1995年2月14日生　満30歳　
+              </div>
+            </div>
+            <div class="section-body">
+              <div class="section-image">
+                <!-- <img class="lazyload fadein" data-src="{% static 'top/img/about/profile.jpg' %}" alt=""> -->
+              </div>
+              <div class="section-desc">
+                <div class="section-text">
+                  <br />約9年間IT業界に携わっています。
+                  <br />マネジメント領域含め、基本的になんでもやりますが、特にバックエンド開発、サーバ/クラウド構築・監視・運用を得意としております。
+                  <br />（プロダクトオーナー、SIer、プログラマ、インフラエンジニア、夜間休日障害対応オンコール担当
+                  etc...）
+                  <br />
+                  <br />本ページでは主に趣味や副業で制作した作品等を紹介しております。
+                </div>
+              </div>
+            </div>
+            <div class="section-sub-title-area">
+              <h3 class="section-sub-title">応援メッセージ</h3>
+              <p>※約7日間保持されます。</p>
+            </div>
+            <div id="support-msg-area">
+              <ul class="slider"></ul>
+            </div>
+            <div id="support-msg-loader-container">
+              <div class="loader"></div>
+            </div>
+            <form id="support-msg-form">
+              <textarea
+                id="messageContent"
+                placeholder="メッセージを入力"
+              ></textarea>
+              <div id="submited-msg"></div>
+              <button type="submit">送信</button>
+            </form>
+          </div>
+        </section>
+        <section class="section" id="works">
+          <div class="inner">
+            <div class="section-title-area">
+              <h2 class="section-title">WORKS</h2>
+              <div class="section-sub-title-area">
+                <h3 class="section-sub-title">HOBBY WORKS</h3>
+              </div>
+              <div class="section-intro">
+                <div class="section-text">趣味で制作した作品です。</div>
+              </div>
+            </div>
+            <div class="section-body card-wrapper my-gallery">
+              <div class="card">
+                <a
+                  href="{% static 'top/img/works/bookman.gif' %}"
+                  data-size="960x720"
+                  class="card-image hover-action-01"
+                >
+                  <img
+                    class="lazyload fadein"
+                    src="{% static 'top/img/placeholder4x3.png' %}"
+                    data-src="{% static 'top/img/works/bookman.gif' %}"
+                    alt=""
+                  />
+                </a>
+                <div class="card-caption">
+                  <div class="card-caption-title">
+                    【PCゲーム】Bookman（C++でほぼスクラッチで開発した3Dアクションゲーム）
+                  </div>
+                  <div class="card-caption-info">
+                    C/C++ / DXライブラリ / blender / Metasequoia / MMD
+                  </div>
+                  <div class="card-caption-url">
+                    <a
+                      class="url-link"
+                      href="https://github.com/HiguchiDev/BookMan"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <a
+                  href="{% static 'top/img/works/bookman.gif' %}"
+                  data-size="960x720"
+                  class="card-image hover-action-01"
+                >
+                  <img
+                    class="lazyload fadein"
+                    src="{% static 'top/img/placeholder4x3.png' %}"
+                    data-src="{% static 'top/img/works/bookman.gif' %}"
+                    alt=""
+                  />
+                </a>
+                <div class="card-caption">
+                  <div class="card-caption-title">
+                    【iOS/Androidゲーム】リアル志向UFOキャッチャー
+                  </div>
+                  <div class="card-caption-info">C# / Unity / blender</div>
+                  <div class="card-caption-url">
+                    <a
+                      class="url-link"
+                      href="https://github.com/HiguchiDev/BookMan"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <a
+                  href="{% static 'top/img/works/bookman.gif' %}"
+                  data-size="960x720"
+                  class="card-image hover-action-01"
+                >
+                  <img
+                    class="lazyload fadein"
+                    src="{% static 'top/img/placeholder4x3.png' %}"
+                    data-src="{% static 'top/img/works/bookman.gif' %}"
+                    alt=""
+                  />
+                </a>
+                <div class="card-caption">
+                  <div class="card-caption-title">
+                    【iOS/Androidゲーム】綿毛スナイパー
+                  </div>
+                  <div class="card-caption-info">C# / Unity / blender</div>
+                  <div class="card-caption-url">
+                    <a
+                      class="url-link"
+                      href="https://github.com/HiguchiDev/BookMan"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <a
+                  href="{% static 'top/img/works/python.gif' %}"
+                  data-size="960x720"
+                  class="card-image hover-action-01"
+                >
+                  <img
+                    class="lazyload fadein"
+                    src="{% static 'top/img/placeholder4x3.png' %}"
+                    data-src="{% static 'top/img/works/python.gif' %}"
+                    alt=""
+                  />
+                </a>
+                <div class="card-caption">
+                  <div class="card-caption-title">
+                    【電子工作】交通ICカードで部屋の鍵が開閉できるシステム
+                  </div>
+                  <div class="card-caption-info">Python / Rasberry Pi</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <a
+                  href="{% static 'top/img/works/hiyoko.gif' %}"
+                  data-size="960x720"
+                  class="card-image hover-action-01"
+                >
+                  <img
+                    class="lazyload fadein"
+                    src="{% static 'top/img/placeholder4x3.png' %}"
+                    data-src="{% static 'top/img/works/hiyoko.gif' %}"
+                    alt=""
+                  />
+                </a>
+                <div class="card-caption">
+                  <div class="card-caption-title">
+                    【PCゲーム】ひよこシューティング
+                  </div>
+                  <div class="card-caption-info">C# / Unity</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <a
+                  href="{% static 'top/img/works/ranguru.gif' %}"
+                  data-size="960x720"
+                  class="card-image hover-action-01"
+                >
+                  <img
+                    class="lazyload fadein"
+                    src="{% static 'top/img/placeholder4x3.png' %}"
+                    data-src="{% static 'top/img/works/ranguru.gif' %}"
+                    alt=""
+                  />
+                </a>
+                <div class="card-caption">
+                  <div class="card-caption-title">
+                    【Webサイト】半径5km圏内のお店がランダムで表示されるWebサイト
+                  </div>
+                  <div class="card-caption-info">
+                    PHP(Laravel) / javascript(jQuery)/ MySQL
+                  </div>
+                  <div class="card-caption-url">
+                    <a
+                      class="url-link"
+                      href="https://github.com/HiguchiDev/LaravelTutorial"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <a
+                  href="{% static 'top/img/works/qua.gif' %}"
+                  data-size="960x720"
+                  class="card-image hover-action-01"
+                >
+                  <img
+                    class="lazyload fadein"
+                    src="{% static 'top/img/placeholder4x3.png' %}"
+                    data-src="{% static 'top/img/works/qua.gif' %}"
+                    alt=""
+                  />
+                </a>
+                <div class="card-caption">
+                  <div class="card-caption-title">
+                    【PCゲーム】3Dオンラインボードゲーム
+                  </div>
+                  <div class="card-caption-info">C# / Unity</div>
+                  <div class="card-caption-url">
+                    <a
+                      class="url-link"
+                      href="https://github.com/HiguchiDev/Quarto"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <a
+                  href="{% static 'top/img/works/camera.jpg' %}"
+                  data-size="960x720"
+                  class="card-image hover-action-01"
+                >
+                  <img
+                    class="lazyload fadein"
+                    src="{% static 'top/img/placeholder4x3.png' %}"
+                    data-src="{% static 'top/img/works/camera.jpg' %}"
+                    alt=""
+                  />
+                </a>
+                <div class="card-caption">
+                  <div class="card-caption-title">
+                    【電子工作】クラウド型自作ペットカメラ
+                  </div>
+                  <div class="card-caption-info">Python / Rasberry Pi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="section-title-area">
+        <div class="section-sub-title-area">
+            <h3 class="section-sub-title">SIDE JOB WORKS</h3>
+            <div class="section-intro">
+              <div class="section-text">
+                副業で制作した作品です。
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="section-body card-wrapper my-gallery">
+        <div class="card">
+            <a href="{% static 'top/img/works/bookman.gif' %}" data-size="960x720" class="card-image hover-action-01">
+              <img class="lazyload fadein" src="{% static 'top/img/placeholder4x3.png' %}" data-src="{% static 'top/img/works/bookman.gif' %}" alt="" />
+            </a>
+            <div class="card-caption">
+              <div class="card-caption-title">【Webサイト】QutyPie-Quiz</div>
+              <div class="card-caption-info">Python(Django) / JavaScript / CSS / Linux</div>
+              <div class="card-caption-url"><a class="url-link" href="https://quty-pie-quiz.com/question/top" target="_blank">Page Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <a href="{% static 'top/img/works/bookman.gif' %}" data-size="960x720" class="card-image hover-action-01">
+              <img class="lazyload fadein" src="{% static 'top/img/placeholder4x3.png' %}" data-src="{% static 'top/img/works/bookman.gif' %}" alt="" />
+            </a>
+            <div class="card-caption">
+              <div class="card-caption-title">【Webサイト】フレフレエンジニア</div>
+              <div class="card-caption-info">Python(Django) / JavaScript / CSS / Linux</div>
+              <div class="card-caption-url"><a class="url-link" href="https://engineer.frefre.site/" target="_blank">Page Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <a href="{% static 'top/img/works/bookman.gif' %}" data-size="960x720" class="card-image hover-action-01">
+              <img class="lazyload fadein" src="{% static 'top/img/placeholder4x3.png' %}" data-src="{% static 'top/img/works/bookman.gif' %}" alt="" />
+            </a>
+            <div class="card-caption">
+              <div class="card-caption-title">【Webサイト】一行の宇宙</div>
+              <div class="card-caption-info">Python(Django) / JavaScript / CSS / Linux</div>
+              <div class="card-caption-url"><a class="url-link" href="https://work.nosemami.com/ichigyo_uchu/" target="_blank">Page Link</a>
+              </div>
+            </div>
+          </div>
+          </div> -->
+        </section>
+
+        <section class="section" id="skills">
+          <div class="inner">
+            <div class="section-title-area">
+              <h2 class="section-title">SKILLS</h2>
+              <div class="section-sub-title-area">
+                <h3 class="section-sub-title">TECHNICAL SKILLS</h3>
+              </div>
+              <div class="section-intro">言語や基盤技術</div>
+            </div>
+            <div class="section-body card-wrapper">
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/python.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">python</h3>
+                  <div class="rating">
+                    <div class="rate rate5"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img
+                    src="{% static 'top/img/skills/javaicon.png' %}"
+                    alt=""
+                  />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">Java</h3>
+                  <div class="rating">
+                    <div class="rate rate5"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/linux.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">Linux/Winsows Server</h3>
+                  <div class="rating">
+                    <div class="rate rate5"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/aws.webp' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">AWS</h3>
+                  <div class="rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/oracle.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">
+                    Oracle SQL/My SQL/Postgresql
+                  </h3>
+                  <div class="rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/C++.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">C/C++</h3>
+                  <div class="rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/gcp.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">GCP</h3>
+                  <div class="rating">
+                    <div class="rate rate2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img
+                    src="{% static 'top/img/skills/terraform_ansible.png' %}"
+                    alt=""
+                  />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">terraform/ansible</h3>
+                  <div class="rating">
+                    <div class="rate rate2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/CSharp.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">C#</h3>
+                  <div class="rating">
+                    <div class="rate rate2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/html.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">HTML/CSS</h3>
+                  <div class="rating">
+                    <div class="rate rate2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/php.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">PHP(Larabel)</h3>
+                  <div class="rating">
+                    <div class="rate rate1"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/js.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">JavaScript</h3>
+                  <div class="rating">
+                    <div class="rate rate1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="inner">
+            <div class="section-title-area">
+              <h2 class="section-title">SKILLS</h2>
+              <div class="section-sub-title-area">
+                <h3 class="section-sub-title">
+                  DEVELOPMENT AND OPERATIONS SKILLS
+                </h3>
+              </div>
+              <div class="section-intro">開発・運用スキル</div>
+            </div>
+            <div class="section-body card-wrapper">
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/backend.jpg' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">バックエンド開発</h3>
+                  ■経験
+                  <div class="rating">
+                    <div class="rate rate5"></div>
+                  </div>
+                  ■興味
+                  <div class="rating">
+                    <div class="rate rate5"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/cloud.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">クラウド構築・運用</h3>
+                  ■経験
+                  <div class="rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                  ■興味
+                  <div class="rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/server.png' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">サーバ構築・運用</h3>
+                  ■経験
+                  <div class="rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  ■興味
+                  <div class="rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img
+                    src="{% static 'top/img/skills/task_management.png' %}"
+                    alt=""
+                  />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">タスクマネジメント</h3>
+                  ■経験
+                  <div class="rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  ■興味
+                  <div class="rating">
+                    <div class="rate rate2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/service.jpg' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">サービス企画</h3>
+                  ■経験
+                  <div class="rating">
+                    <div class="rate rate2"></div>
+                  </div>
+                  ■興味
+                  <div class="rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img src="{% static 'top/img/skills/sre.jpg' %}" alt="" />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">SRE</h3>
+                  ■経験
+                  <div class="rating">
+                    <div class="rate rate2"></div>
+                  </div>
+                  ■興味
+                  <div class="rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img
+                    src="{% static 'top/img/skills/people_management.jpg' %}"
+                    alt=""
+                  />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">ピープルマネジメント</h3>
+                  ■経験
+                  <div class="rating">
+                    <div class="rate rate2"></div>
+                  </div>
+                  ■興味
+                  <div class="rating">
+                    <div class="rate rate1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="skills-icon">
+                  <img
+                    src="{% static 'top/img/skills/frontend.jpg' %}"
+                    alt=""
+                  />
+                </div>
+                <div class="skills-desc">
+                  <h3 class="skills-desc-title">フロントエンド開発</h3>
+                  ■経験
+                  <div class="rating">
+                    <div class="rate rate1"></div>
+                  </div>
+                  ■興味
+                  <div class="rating">
+                    <div class="rate rate1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="certifications">
+          <div class="inner">
+            <div class="section-title-area">
+              <h2 class="section-title">CERTIFICATIONS</h2>
+              <div class="section-intro"></div>
+            </div>
+            <div class="section-body card-wrapper">
+              <div class="card">
+                <ul>
+                  <li class="certifications_li"><p>・基本情報処理技術者</p></li>
+                  <li class="certifications_li">
+                    <a
+                      href="https://cp.certmetrics.com/amazon/en/public/verify/credential/bd101807af6849c7b509456b11498c1e"
+                      >・【2027年02月01日まで有効】AWS Certified DevOps Engineer
+                      - Professional</a
+                    >
+                  </li>
+                  <li class="certifications_li">
+                    <a
+                      href="https://cp.certmetrics.com/amazon/en/public/verify/credential/S0HQ25028BEQ1RSE"
+                      >・【2027年02月01日まで有効】AWS Certified SysOps
+                      Administrator - Associate</a
+                    >
+                  </li>
+                  <li class="certifications_li">
+                    <a
+                      href="https://cp.certmetrics.com/amazon/en/public/verify/credential/E1ZCJHP282RQQN9T"
+                      >・【2027年02月01日まで有効】AWS Certified Developer -
+                      Associate</a
+                    >
+                  </li>
+                  <li class="certifications_li">
+                    <a
+                      href="https://cp.certmetrics.com/amazon/en/public/verify/credential/47FHFL1B51V41LCW"
+                      >・【2026年12月04日まで有効】AWS Certified Solutions
+                      Architect - Associate</a
+                    >
+                  </li>
+                  <li class="certifications_li">
+                    <a
+                      href="https://www.credly.com/badges/fa6d89c2-af9d-4743-b7d3-195ececa10b9/public_url"
+                      >・【2024年06月30日まで有効】Google Cloud Certified -
+                      Professional Cloud Developer</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="contact">
+          <div class="inner">
+            <div class="section-title-area">
+              <h2 class="section-title">CONTACT</h2>
+              <div class="section-intro"></div>
+            </div>
+            <div class="section-body contact-wrapper">
+              <div class="contact-list">
+                <div class="contact-other">higuchi.develop@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <div class="pageTop">
+          <div id="js-pageTop">Page Top</div>
+        </div>
+        <div class="inner"></div>
+      </footer>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+
+            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'top/js/photoswipe/photoswipe.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'top/js/photoswipe/photoswipe-ui-default.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'top/js/photoswipe/photoswipe_setup.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'top/js/lazysizes/lazysizes.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'top/js/script.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>
