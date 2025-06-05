@@ -260,12 +260,12 @@ li {
 }
 
 .card-caption {
-  text-align: center;
+  text-align: left;
 }
 
 .card-caption-title {
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 15px;
+  /* font-weight: bold; */
   margin-top: 8px;
 }
 
@@ -294,9 +294,12 @@ li {
  WORKS
 ---------------------------------*/
 
+
 #works .card {
   flex-basis: 31%;
   margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 #works .card-wrapper::after {
@@ -377,6 +380,10 @@ li {
 #support-msg-area .slider {
   margin: 0 auto;
   width: 80%;
+}
+
+#save_term_msg {
+  font-size: 12px;
 }
 
 #support-msg-form {
@@ -491,6 +498,14 @@ li {
   flex-basis: 46%;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#skills .tec_card {
+  display: flex;
+  flex-basis: 20%;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -783,6 +798,10 @@ li {
 
   #skills .card {
     flex-basis: 100%;
+  }
+
+  #skills .tec_card {
+    flex-basis: 20%;
   }
 
   #skills .skills-icon {
