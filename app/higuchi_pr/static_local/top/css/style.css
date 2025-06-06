@@ -349,6 +349,7 @@ li {
 #about .section-image {
   flex-basis: 20%;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 #about .section-image a {
@@ -372,11 +373,6 @@ li {
   margin-top: 20px;
 }
 
-#support-msg-form {
-  align-items: center;
-  text-align: center;
-}
-
 #support-msg-area .slider {
   margin: 0 auto;
   width: 80%;
@@ -388,6 +384,8 @@ li {
 
 #support-msg-form {
   display: flex;
+  align-items: center;
+  text-align: center;
   flex-direction: column;
   width: 400px;
   margin: 20px auto;
@@ -749,6 +747,17 @@ li {
 
   .section .section-title-area {
     margin-bottom: 20px;
+  }
+
+  #support-msg-form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100px;
+    margin: 20px auto;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .section .section-title {
